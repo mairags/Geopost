@@ -1,0 +1,91 @@
+<html>
+    <style>
+        .center-div {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .tabelas-jogos {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .tabelas-jogos td, .tabelas-jogos th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .tabelas-jogos tr:nth-child(even){
+            background-color: #f2f2f2;
+        }
+
+        .tabelas-jogos tr:hover {
+            background-color: #ddd;
+        }
+
+        .tabelas-jogos th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+    </style>
+    <head>
+        <title>Campeonato de Futebol</title>
+
+    </head>
+    <body style="padding-bottom: 100px;">
+        <div class="center-div" id="div-primaria">
+            <h2>Campeonato de Futebol</h2>
+            <label>Digite aqui os nomes dos times e suas cidades</label>
+            <textarea id="textAreaTimes" style="width: 100%; height: 500px"></textarea>
+            <br>
+            <br>
+
+            <button onclick="avancarTextArea()">Avançar</button>
+            <button onclick="limparTextArea()">Limpar</button>
+        </div>
+        <div class="center-div" id="div-secundaria-ida" hidden>
+            <h2>Campeonato de Futebol</h2>
+            <h4>Jogos de Ida</h4>
+        </div>
+
+
+        <div class="center-div" id="div-secundaria-volta" hidden>
+            <br>
+            <hr>
+            <br>
+
+            <h4>Jogos de Volta</h4>
+        </div>
+
+        <div class="center-div" id="div-secundaria-pontos" hidden>
+            <br>
+            <hr>
+            <br>
+            
+            <h4>Tabela de pontos</h4>
+        </div>
+
+        <div class="center-div" id="div-secundaria-jogos" hidden>
+            <br>
+            <hr>
+            <br>
+            
+            <h4>Placares</h4>
+        </div>
+
+        
+
+    </body>
+</html>
+
+<script src="script.js"></script>
